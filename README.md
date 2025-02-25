@@ -436,7 +436,8 @@ Para tornar a previsão acessível, implementamos uma **aplicação interativa n
 ✅ **Entrada dos dados do cliente**.  
 ✅ **Previsão de renda em tempo real**.  
 
-Abaixo está o código para rodar o modelo no **Streamlit**.
+Abaixo está o código para rodar o modelo no **Streamlit**. https://previsao-de-renda-5ancrpvaeapelvqy3xgoj6.streamlit.app/#633be673
+
 
 
 
