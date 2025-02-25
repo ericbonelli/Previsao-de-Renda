@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # 📌 Carregar o modelo treinado e o normalizador
-modelo = joblib.load("modelo_previsao_renda_comprimido.pkl")
+modelo = joblib.load("modelo_previsao_renda_final.pkl")
 scaler = joblib.load("scaler_previsao_renda.pkl")
 
 # 📌 Título da Aplicação
