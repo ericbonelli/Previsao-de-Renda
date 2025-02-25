@@ -62,10 +62,14 @@ elif analise_tipo == "Bivariada":
     ax.set_ylabel(variavel_y)
     st.pyplot(fig)
 
-    # 📌 Heatmap de Correlação
+    # 📌 Heatmap de Correlação (Corrigido)
     st.subheader("Matriz de Correlação")
+    
+    # Filtrar apenas colunas numéricas para evitar erro
+    renda_numerico = renda.select_dtypes(include=['int64', 'float64'])
+
     fig, ax = plt.subplots(figsize=(10, 6))
-    sns.heatmap(renda.corr(), annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5, ax=ax)
+    sns.heatmap(renda_numerico.corr(), annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5, ax=ax)
     ax.set_title("Matriz de Correlação")
     st.pyplot(fig)
 
